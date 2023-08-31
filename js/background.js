@@ -227,7 +227,7 @@ let fetchData = {
             stats = await fetch(`${zh_url}stats`).then((res) => res.json())
             static = await fetch(`${zh_url}static`).then((res) => res.json())
             items = await fetch(`${zh_url}items`).then((res) => res.json())
-            if (!!skip_str)(str='数据选择受【程序员】在线fix !!!!\n\n')
+            //if (!!skip_str)(str='数据选择受【程序员】在线fix !!!!\n\n')
             stats.localdateselect=str + '保存 国服 数据成功 => (备用),同步日期:' + stats.update
         }
         if (!!stats?.result && !!static?.result){
